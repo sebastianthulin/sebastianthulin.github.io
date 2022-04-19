@@ -1,0 +1,8 @@
+@media print {
+  section {
+    display: block;
+  }
+  header, .fab, .button {
+    display: none;
+  }
+}
