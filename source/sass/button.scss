@@ -1,0 +1,21 @@
+.button {
+  text-decoration: none;
+  display: inline-block;
+  padding: .8rem 1.6rem;
+  color: #fff;
+  background-color: #E91E63;
+  border-radius: 30px;
+  filter: drop-shadow(0 8px 16px rgba(0,0,0,.2));
+}
+
+.button:hover {
+  background-color: #E91E63;
+}
+
+.button + .button {
+  margin-left: 1rem;
+}
+
+p + .button {
+  margin-top: 1rem;
+}

@@ -1,0 +1,36 @@
+.card {
+    position: relative;
+    background-color: #fff;
+    padding: 2rem;
+    border-left: 4px solid #eee;
+    border-radius: 4px;
+    filter: drop-shadow(0 8px 16px rgba(0,0,0,.2));
+
+    &:nth-child(4n) {
+        border-color: #FF5252;
+    }
+
+    &:nth-child(4n+1) {
+        border-color: #C2185B;
+    }
+
+    &:nth-child(4n+2) {
+        border-color: #E91E63;
+    }
+
+    &:nth-child(4n+3) {
+        border-color: #757575;
+    }
+
+    .card__title {
+        margin-top: 0;
+    }
+
+    .card__table {
+        margin-top: 1.5rem;
+    }
+}
+
+.card + .card {
+    margin-top: 3.5rem;
+}

@@ -1,0 +1,35 @@
+.u-margin {
+    margin: 2rem;
+}
+
+.u-margin-top {
+    margin-top: 2rem;
+}
+
+.u-margin-reset {
+    margin: 0;
+}
+
+.u-shadow--small {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.u-shadow--large {
+    box-shadow: 0 0 3rem rgba(0, 0, 0, 0.1);
+}
+
+.u-nobreak {
+    white-space: nowrap;
+}
+
+@media all and (max-width: 800px) {
+    .hidden-mobile {
+        display: none;
+    }
+}
+
+@media all and (min-width: 801px) {
+    .hidden-desktop {
+        display: none;
+    }
+}

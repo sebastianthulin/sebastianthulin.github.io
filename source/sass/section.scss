@@ -1,0 +1,17 @@
+section {
+    display: none;
+    width: 94%;
+    max-width: 750px;
+    margin: 10vh auto 20vh auto;
+}
+
+section:target {
+    display: block;
+    animation-delay: 2s;
+}
+
+@media all and (max-width: 800px) {
+    section {
+        margin-top: 3%;
+    }
+}
