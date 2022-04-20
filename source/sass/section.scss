@@ -1,5 +1,4 @@
 section {
-    display: none;
     width: 94%;
     max-width: 750px;
     margin: 10vh auto 20vh auto;
@@ -8,6 +7,12 @@ section {
 section:target {
     display: block;
     animation-delay: 2s;
+}
+
+@media screen {
+    section {
+        display: none;
+    }
 }
 
 @media all and (max-width: 800px) {
