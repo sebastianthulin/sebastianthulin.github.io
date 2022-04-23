@@ -1,21 +1,20 @@
-body > header {
-    padding: 24px 8px;
-    background-color: #fff;
+header {
+    padding: calc(#{$base} * 3) #{$base};
+    background-color: var(--header-background-color);
     filter: drop-shadow(0 8px 16px rgba(0,0,0,.1));
-    border-bottom: 1px solid #eee;
     font-size: .9rem;
     animation: fade-in 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) 1s both;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    backdrop-filter: blur(8px);
 
     @media all and (max-width: 800px) {
-        position: fixed;
+        top: auto;
         bottom: 0;
-        left: 0;
-        right: 0;
-        border-bottom: none;
-        border-top: 1px solid #eee;
-        background: #fff;
-        z-index: 1;
-        padding: 8px;
+        padding: #{$base};
     }
 
     a {
@@ -32,12 +31,12 @@ body > header {
         content: "";
         height: 3px;
         display: block;
-        background-color: #E91E63;
+        background-color: var(--color-scheme-d);
         width: 0;
     }
 
     a.current:after {
-        background-color: #C2185B;
+        background-color: var(--color-scheme-e);
     }
 
     a:hover:after,

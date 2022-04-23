@@ -1,5 +1,4 @@
 const path = require('path');
-const { WebpackManifestPlugin } = require('webpack-manifest-plugin');
 const WebpackNotifierPlugin = require('webpack-notifier');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -16,8 +15,7 @@ module.exports = {
      * Add your entry files here
      */
     entry: {
-        'css/app':               './source/sass/app.scss',
-        'js/app':                './source/js/app.js',
+        'css/app':               './source/sass/app.scss'
     },
     
     /**
@@ -74,45 +72,12 @@ module.exports = {
         /**
          * Clean dist folder
          */
-        new CleanWebpackPlugin(),
+        //new CleanWebpackPlugin(),
         /**
          * Output CSS files
          */
         new MiniCssExtractPlugin({
             filename: '[name].css'
-        }),
-
-        /**
-         * Output manifest.json for cache busting
-         */
-        new WebpackManifestPlugin({
-            // Filter manifest items
-            filter: function (file) {
-                // Don't include source maps
-                if (file.path.match(/\.(map)$/)) {
-                    return false;
-                }
-                return true;
-            },
-            // Custom mapping of manifest item goes here
-            map: function (file) {
-                // Fix incorrect key for fonts
-                if (
-                    file.isAsset &&
-                    file.isModuleAsset &&
-                    file.path.match(/\.(woff|woff2|eot|ttf|otf)$/)
-                ) {
-                    const pathParts = file.path.split('.');
-                    const nameParts = file.name.split('.');
-
-                    // Compare extensions
-                    if (pathParts[pathParts.length - 1] !== nameParts[nameParts.length - 1]) {
-                        file.name = pathParts[0].concat('.', pathParts[pathParts.length - 1]);
-                    }
-                }
-                
-                return file;
-            },
         }),
 
         /**
@@ -135,6 +100,5 @@ module.exports = {
         }))
 
     ]).filter(Boolean),
-    devtool: 'source-map',
     stats: { children: false }
 };

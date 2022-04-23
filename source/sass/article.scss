@@ -1,20 +1,19 @@
 article {
     line-height: 160%;
-    color: #000;
     animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     max-width: 75ch;
 }
 
 article p+p {
-    margin-top: 1.5rem;
+    margin-top: calc(#{$base} * 3);
 }
 
 article h2+p {
-    margin-top: 2rem;
+    margin-top: calc(#{$base} * 4);
 }
 
 article + article {
-    padding-top: 4rem;
+    padding-top: calc(#{$base} * 4);
 }
 
 @media all and (max-width: 800px) {

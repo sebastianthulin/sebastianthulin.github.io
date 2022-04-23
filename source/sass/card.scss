@@ -1,25 +1,53 @@
 .card {
     position: relative;
-    background-color: #fff;
-    padding: 2rem;
-    border-left: 4px solid #eee;
-    border-radius: 4px;
-    filter: drop-shadow(0 24px 16px rgba(0,0,0,.2));
+    background-color: var(--complementary-color);
+    padding: calc(#{$base} * 4);
+    border-left: calc(#{$base} * .5) solid #eee;
+    border-radius: calc(#{$base} * .5);
+    filter: drop-shadow(0 calc(#{$base} * 3) calc(#{$base} * 2) rgba(0,0,0,.2));
+
+    &:before {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: #eee;
+        content: "";
+        opacity: .07;
+        z-index: -1;
+    }
 
     &:nth-child(4n) {
-        border-color: #FF5252;
+        border-color: var(--color-scheme-e);
+
+        &:before {
+            background-color: var(--color-scheme-e);
+        }
     }
 
     &:nth-child(4n+1) {
-        border-color: #C2185B;
+        border-color: var(--color-scheme-f);
+
+        &:before {
+            background-color: var(--color-scheme-f);
+        }
     }
 
     &:nth-child(4n+2) {
-        border-color: #E91E63;
+        border-color: var(--color-scheme-d);
+
+        &:before {
+            background-color: var(--color-scheme-d);
+        }
     }
 
     &:nth-child(4n+3) {
-        border-color: #757575;
+        border-color: var(--color-scheme-g);
+
+        &:before {
+            background-color: var(--color-scheme-g);
+        }
     }
 
     .card__title {
@@ -27,10 +55,10 @@
     }
 
     .card__table {
-        margin-top: 1.5rem;
+        margin-top: calc(#{$base} * 2);
     }
 }
 
 .card + .card {
-    margin-top: 3.5rem;
+    margin-top: calc(#{$base} * 4);
 }

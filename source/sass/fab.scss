@@ -1,13 +1,13 @@
 .fab {
     display: block;
-    background: #E91E63;
+    background: var(--color-scheme-e);
     border-radius: 50%;
     position: static;
-    width: 3rem;
-    height: 3rem;
+    width: calc(#{$base} * 6);
+    height: calc(#{$base} * 6);
     position: fixed;
-    bottom: 1.5rem;
-    right: 1.5rem;
+    bottom: calc(#{$base} * 3);
+    right: calc(#{$base} * 3);
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
     animation: pop-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 
@@ -38,7 +38,7 @@
     position: absolute;
     bottom: 3rem;
     right: 0.2rem;
-    background: #fff;
+    background: var(--color-scheme-c);
     list-style: none;
     padding: 1rem;
     box-shadow: 0px 2px 10px 0px rgba(0,0,0,.1);
@@ -55,7 +55,7 @@
     width: 15px;
     height: 15px;
     box-shadow: 0px 2px 10px 0px rgba(0,0,0,.1);
-    background: #fff;
+    background: var(--color-scheme-c);
     transform: rotate(45deg);
 }
 
@@ -66,17 +66,15 @@
     bottom: 0;
     left: 0;
     height: 15px;
-    background: #fff;
+    background: var(--color-scheme-c);
     z-index: 2;
     border-radius: 0 0 .2rem .2rem;
 }
 
 .fab a.open + ul {
-    display: block;
-}
-
-.fab ul li + li {
-    margin-top: .3rem;
+    display: flex;
+    flex-direction: column;
+    gap: #{$base};
 }
 
 .fab ul a {

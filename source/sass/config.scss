@@ -1,0 +1,21 @@
+$base: var(--base, 8px); 
+
+:root {
+  --color-scheme-a: #001220;
+  --color-scheme-b: #131f37;
+  --color-scheme-c: #4d345e;
+  --color-scheme-d: #96446e;
+  --color-scheme-e: #d55e64;
+  --color-scheme-f: #f88f4a;
+  --color-scheme-g: #fbae3c;
+
+  --color-scheme-black: #000406;
+  --color-scheme-white: #fcfcfc;
+
+  --body-background-color: var(--color-scheme-a);
+  --body-font-face-color: var(--color-scheme-white);
+
+  --header-background-color: rgba(0, 4, 6, .7); 
+
+  --complementary-color: #171717;
+}

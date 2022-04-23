@@ -1,21 +1,27 @@
 .button {
   text-decoration: none;
   display: inline-block;
-  padding: .8rem 1.6rem;
+  padding: calc(#{$base} * 1.5) calc(#{$base} * 4);
   color: #fff;
-  background-color: #E91E63;
-  border-radius: 30px;
+  background-color: var(--color-scheme-e);
+  border-radius: calc(#{$base} * 6);
   filter: drop-shadow(0 8px 16px rgba(0,0,0,.2));
+  transition: 250ms background-color;
 }
 
-.button:hover {
-  background-color: #E91E63;
+.button:hover,
+.button:focus {
+  background-color: var(--color-scheme-d);
+}
+
+.button:active {
+  background-color: var(--color-scheme-f);
 }
 
 .button + .button {
-  margin-left: 1rem;
+  margin-left: calc(#{$base});
 }
 
 p + .button {
-  margin-top: 1rem;
+  margin-top: calc(#{$base} * 4);
 }
