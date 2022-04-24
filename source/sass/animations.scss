@@ -26,11 +26,22 @@
   @keyframes fade-in-bottom {
     0% {
       filter: blur(4px) opacity(0%) grayscale(100%);
-      transform: translateY(50px) ;
+      transform: translateX(50px) ;
     }
     100% {
       filter: blur(0) opacity(100%) grayscale(0%);
-      transform: translateY(0);
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes fade-out-bottom {
+    0% {
+      filter: blur(0) opacity(100%) grayscale(0%);
+      transform: translateX(0);
+    }
+    100% {
+      filter: blur(4px) opacity(0%) grayscale(100%);
+      transform: translateX(-50px) ;
     }
   }
 

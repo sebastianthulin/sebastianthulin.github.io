@@ -207,6 +207,9 @@
         ['hashchange', 'onload'].forEach(function(e){
             window.addEventListener(e, function(e) {
                 window.scrollTo(0, 0);
+                setTimeout(function(){
+                    window.scrollTo(0, 0);
+                }, 20);
             }, false);
         });
 
@@ -218,6 +221,46 @@
                     page.classList.remove('current');
                 });
                 this.classList.add('current');
+            });
+        });
+
+        //Content animation defer
+        var pages = document.querySelectorAll("nav a, .fab ul a");
+        [].forEach.call(pages, function(page) {
+            page.addEventListener('click', function(e) {
+
+                e.preventDefault();
+
+                let hash = this.closest('a').getAttribute('href');
+
+                //Not a new page
+                if(hash === window.location.hash) {
+                    return false;
+                }
+
+                //Bail if undefined
+                if(typeof hash === 'undefined') {
+                   return false;
+                }
+
+                //Remove all animations out
+                let sections = document.querySelectorAll("section");
+                [].forEach.call(sections, function(item) {
+                    item.classList.remove('animate-out');
+                });
+
+                //Do animation
+                let animateOut = document.querySelectorAll("section:target"); 
+                if(animateOut.length > 0) {
+                    [].forEach.call(animateOut, function(item) {
+                        item.classList.add('animate-out');
+                    });
+                    setTimeout(function(hash) {
+                        window.location.hash = hash;
+                    }, 500, hash);
+                } else {
+                    window.location.hash = hash;
+                }
             });
         });
 
