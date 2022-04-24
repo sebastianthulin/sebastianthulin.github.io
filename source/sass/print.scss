@@ -8,4 +8,9 @@
   header, .fab, .button {
     display: none;
   }
+
+  h1, p, ul {
+    text-shadow: none;
+    color: #000;
+  }
 }
