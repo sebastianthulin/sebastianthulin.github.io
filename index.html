@@ -252,11 +252,6 @@
         //Active menu element
         [].forEach.call(anchorLinks, function(page) {
             page.addEventListener('click', function(event) {
-
-                if(!event.defaultPrevented) {
-                    return;
-                }
-
                 [].forEach.call(document.querySelectorAll("nav a"),function(page){
                     page.classList.remove('current');
                 });
@@ -265,12 +260,10 @@
         });
 
         //Toggle open class, since we cannot use target
-        var submenu = document.querySelectorAll("#submenu-trigger");
-        [].forEach.call(submenu, function(sub) {
-            sub.addEventListener('click', function(e) {
-                e.preventDefault();
-                this.classList.toggle('open');
-            });
+        let submenu = document.querySelector("#submenu-trigger"); 
+        submenu.addEventListener('click', function(e) {
+            e.preventDefault();
+            this.classList.toggle('open');
         });
     </script>
 </html>
