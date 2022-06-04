@@ -1,16 +1,9 @@
 @media print {
   body, html {
     background: initial; 
-  }
-  section {
-    display: block;
-  }
-  header, .fab, .button {
-    display: none;
-  }
 
-  h1, p, ul {
-    text-shadow: none;
-    color: #000;
+    * {
+      color: #000;
+    }
   }
 }

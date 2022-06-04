@@ -24,166 +24,189 @@
         </script>
     </head>
     <body>
-        <div class="background"></div>
-        <header>
+        <header class="u-hidden--print">
             <nav role="navigation" aria-label="Huvudmeny">
                 <ul>
-                    <li><a href="#hem" aria-label="Hem"><i class="icon icon-me hidden-desktop"></i><span>Hem</span></a></li>
-                    <li><a href="#erfarenhet" aria-label="Erfarenhet"><i class="icon icon-history hidden-desktop"></i><span>Erfarenhet</span></a></li>
-                    <li><a href="#kompetens" aria-label="Kompetens"><i class="icon icon-code hidden-desktop"></i><span>Kompetens</span></a></li>
-                    <li><a href="#kontakt" aria-label="Kontakt"><i class="icon icon-contact hidden-desktop"></i><span>Kontakt</span></a></li>
+                    <li>
+                        <a href="#hem" aria-label="Hem">
+                            <i class="icon icon-me u-hidden--desktop"></i>
+                            <span>Hem</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#erfarenhet" aria-label="Erfarenhet">
+                            <i class="icon icon-history u-hidden--desktop"></i>
+                            <span>Erfarenhet</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#kompetens" aria-label="Kompetens">
+                            <i class="icon icon-code u-hidden--desktop"></i>
+                            <span>Kompetens</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#kontakt" aria-label="Kontakt">
+                            <i class="icon icon-contact u-hidden--desktop"></i>
+                            <span>Kontakt</span>
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </header>
 
-        <section id="hem">
-            <article>
-                <h1>
-                    Hej 👋, <br/>
-                    jag heter Sebastian <br/>
-                    och jobbar med webb.
-                </h1>
+        <main>
 
-                <p>Jag brinner för att utveckla effektiva och användbara lösningar för målgruppen, med hög kvalitét. Slutanvändare, organisation eller utvecklare? Bra lösningar är trivsamma för alla.</p>
-                <p>Under mina år i Helsingborg Stad har jag drivit och utvecklat OpenSource lösningen <a href="https://municipio.se">Municipio</a> med WordPress som bas, som numera används av runt 30 kommuner och organisationer.</p>
+            <section id="hem">
+                <article>
+                    <h1>
+                        Hej 👋, <br/>
+                        jag heter Sebastian <br/>
+                        och jobbar med webb.
+                    </h1>
 
-                <a href="#kontakt" class="button">Kontakta mig</a>
-            </article>
-        </section>
+                    <p>Jag brinner för att utveckla effektiva och användbara lösningar för målgruppen, med hög kvalitét. Slutanvändare, organisation eller utvecklare? Bra lösningar är trivsamma för alla.</p>
+                    <p>Under mina år i Helsingborg Stad har jag drivit och utvecklat OpenSource lösningen <a href="https://municipio.se">Municipio</a> med WordPress som bas, som numera används av runt 30 kommuner och organisationer.</p>
 
-        <section id="erfarenhet">
-            <article>
-                <h2>Produkter</h2>
+                    <a href="#kontakt" class="button u-hidden--print">Kontakta mig</a>
 
-                <div class="card">
-                    <h3 class="card__title">Webbplattform Municipio | Helsingborg Stad </h3>
-                    <p>Initiativet till <a href="https://municipio.se">Municipio</a> togs av mig för att lösa förvaltningsfrågan av de 250 webbplatser som staden förvaltar. Sedan 2017 har fler än 30 kommuner och kommunala bolag valt plattformen, men i princip är det en lösning som funkar för de flesta typer av verksamheter. Municipio bygger på öppen källkod och har ingen licenskostnad.</p>
+                </article>
+            </section>
 
-                    <table class="card__table">
-                        <tr>
-                            <td>Språk</td>
-                            <td>PHP, Redis, MySQL</td>
-                        </tr>
-                        <tr>
-                            <td>Ramverk</td>
-                            <td>WordPress</td>
-                        </tr>
-                        <tr>
-                            <td>Plattform</td>
-                            <td>LAMP, LEMP</td>
-                        </tr>
-                    </table>
-                </div>
+            <section id="erfarenhet">
+                <article>
+                    <h2>Produkter</h2>
 
-                <div class="card">
-                    <h3 class="card__title">Mitt Helsingborg | Helsingborg Stad </h3>
-                    <p>Mitt Helsingborg är "mina sidor" för helsingborgaren. I det här projektet har jag agerat <strong>Arkitekt</strong> för lösningen. Lösningen bygger på intregrationer (REST och SOAP) till interna system för att sammanställa en vy för Helsingborgaren. Produkten vidareutvecklas i dagsläget för att fungera på webbplattformen Municipio, där jag är en del i coreteamet för att ta fram arkitektur och lösningsförslag med fokus på att effektivisera utvecklingsprocessen.</p>
+                    <div class="card">
+                        <h3 class="card__title">Webbplattform Municipio | Helsingborg Stad </h3>
+                        <p>Initiativet till <a href="https://municipio.se">Municipio</a> togs av mig för att lösa förvaltningsfrågan av de 250 webbplatser som staden förvaltar. Sedan 2017 har fler än 30 kommuner och kommunala bolag valt plattformen, men i princip är det en lösning som funkar för de flesta typer av verksamheter. Municipio bygger på öppen källkod och har ingen licenskostnad.</p>
 
-                    <table class="card__table">
-                        <tr>
-                            <td>Språk</td>
-                            <td>NodeJS (Lambda Functions)</td>
-                        </tr>
-                        <tr>
-                            <td>Databas</td>
-                            <td>DynamoDB</td>
-                        </tr>
-                        <tr>
-                            <td>Plattform</td>
-                            <td>AWS</td>
-                        </tr>
-                    </table>
-                </div>
+                        <table class="card__table">
+                            <tr>
+                                <td>Språk</td>
+                                <td>PHP, Redis, MySQL</td>
+                            </tr>
+                            <tr>
+                                <td>Ramverk</td>
+                                <td>WordPress</td>
+                            </tr>
+                            <tr>
+                                <td>Plattform</td>
+                                <td>LAMP, LEMP</td>
+                            </tr>
+                        </table>
+                    </div>
 
-            </article>
+                    <div class="card">
+                        <h3 class="card__title">Mitt Helsingborg | Helsingborg Stad </h3>
+                        <p>Mitt Helsingborg är "mina sidor" för helsingborgaren. I det här projektet har jag agerat <strong>Arkitekt</strong> för lösningen. Lösningen bygger på intregrationer (REST och SOAP) till interna system för att sammanställa en vy för Helsingborgaren. Produkten vidareutvecklas i dagsläget för att fungera på webbplattformen Municipio, där jag är en del i coreteamet för att ta fram arkitektur och lösningsförslag med fokus på att effektivisera utvecklingsprocessen.</p>
 
-            <article>
-                <h2>Arbetsliv</h2>
+                        <table class="card__table">
+                            <tr>
+                                <td>Språk</td>
+                                <td>NodeJS (Lambda Functions)</td>
+                            </tr>
+                            <tr>
+                                <td>Databas</td>
+                                <td>DynamoDB</td>
+                            </tr>
+                            <tr>
+                                <td>Plattform</td>
+                                <td>AWS</td>
+                            </tr>
+                        </table>
+                    </div>
 
-                <div class="card">
-                    <h3 class="card__title">Helsingborg Stad | 2015 och framåt</h3>
-                    <p> På Helsingborg Stad jobbar jag med WordPress, men har tagit ett kliv mot en mer varierad roll som <u>utvecklingsansvarig</u> (<u>Lead Developer</u>). Under min tid på Helsingborg Stad har jag tagit fram ett koncept för att effektivisera stadens webbutveckling genom en flexibel och strukturerad plattform. Arbetet har blivit annammat av flera andra kommuner och företag, som numera också bidrar och använder plattformen.</p>
-                </div>
+                </article>
 
-                <div class="card">
-                    <h3 class="card__title">Gertrud och Söner AB | 2012 - 2015</h3>
-                    <p>På Gertrud var mitt primära arbetsområde utveckling av WordPress sidor i min roll som <u>systemutvecklare</u>. I många av uppdragen rörde jag mig både i frontend och backendmiljöer. Vid ett fåtal tillfällen genomförde jag även ljudproduktioner för såväl film som monterinstallationer.</p>
-                </div>
+                <article>
+                    <h2>Arbetsliv</h2>
 
-                <div class="card">
-                    <h3 class="card__title">MBS Maskinbroderi | 2010, 2011 & 2012</h3>
-                    <p>På MBS jobbade jag som <u>systemutvecklare</u> och <u>grafisk formgivare</u>. Jag ansvarede för att planera och strukturera upp webbsidan innehållande ett stort produktsortment, samt att producera denna. I arbetsuppgifterna ingick komplett tekniskt ansvar samt att producera tryckmaterial så som tidningsannonser, men också tryck för kläder.</p>
-                </div>
+                    <div class="card">
+                        <h3 class="card__title">Helsingborg Stad | 2015 och framåt</h3>
+                        <p> På Helsingborg Stad jobbar jag med WordPress, men har tagit ett kliv mot en mer varierad roll som <u>utvecklingsansvarig</u> (<u>Lead Developer</u>). Under min tid på Helsingborg Stad har jag tagit fram ett koncept för att effektivisera stadens webbutveckling genom en flexibel och strukturerad plattform. Arbetet har blivit annammat av flera andra kommuner och företag, som numera också bidrar och använder plattformen.</p>
+                    </div>
 
-                <div class="card">
-                    <h3 class="card__title">Logotypebolaget Sverige AB | 2011</h3>
-                    <p>På Logotypebolaget arbetade jag som <u>systemutvecklare</u>, primärt med att skapa mindre Wordpress-sidor för småföretagare. Jag ansvarade också för produktionen av större söksajter och offertförmedlingssiter, de flesta, byggda i ASP.NET C#.</p>
-                </div>
+                    <div class="card">
+                        <h3 class="card__title">Gertrud och Söner AB | 2012 - 2015</h3>
+                        <p>På Gertrud var mitt primära arbetsområde utveckling av WordPress sidor i min roll som <u>systemutvecklare</u>. I många av uppdragen rörde jag mig både i frontend och backendmiljöer. Vid ett fåtal tillfällen genomförde jag även ljudproduktioner för såväl film som monterinstallationer.</p>
+                    </div>
 
-                <p class="small u-margin-top">
-                    Jag har också haft följande anställningar; Helsingborgs Stad - Webbdesignslärare, Automationspartner Helsingborg - Dokumenationsansvarig.
-                </p>
-            </article>
-        </section>
+                    <div class="card">
+                        <h3 class="card__title">MBS Maskinbroderi | 2010, 2011 & 2012</h3>
+                        <p>På MBS jobbade jag som <u>systemutvecklare</u> och <u>grafisk formgivare</u>. Jag ansvarede för att planera och strukturera upp webbsidan innehållande ett stort produktsortment, samt att producera denna. I arbetsuppgifterna ingick komplett tekniskt ansvar samt att producera tryckmaterial så som tidningsannonser, men också tryck för kläder.</p>
+                    </div>
 
-        <section id="kompetens">
-            <article>
-                <h2>Kompetens</h2>
-                <p>Före och under min yrkesverksamma tid har jag samlat på mig en hel del kunskaper, både tekniska färdigheter, kunskap inom ledning av mindre team med mycket rörelse (konsultbaserade team) och arkitekturella lösningar. </p>
+                    <div class="card">
+                        <h3 class="card__title">Logotypebolaget Sverige AB | 2011</h3>
+                        <p>På Logotypebolaget arbetade jag som <u>systemutvecklare</u>, primärt med att skapa mindre Wordpress-sidor för småföretagare. Jag ansvarade också för produktionen av större söksajter och offertförmedlingssiter, de flesta, byggda i ASP.NET C#.</p>
+                    </div>
 
-                <h3>Teknik</h3>
-                <p>Min meritlista kan göras lång och komplicerad, men nedan följer ett axplock av kunskaper jag har. WordPress har länge varit mitt huvudsakliga arbetsområde, där jag numera kan säga att jag har <strong>arbetat aktivt med CMS:et i över 10 år</strong>.</p>
+                    <p class="small u-margin-top">
+                        Jag har också haft följande anställningar; Helsingborgs Stad - Webbdesignslärare, Automationspartner Helsingborg - Dokumenationsansvarig.
+                    </p>
+                </article>
+            </section>
 
-                <ul>
-                    <li>WordPress (Utveckling av plugin och teman)</li>
-                    <li>Cache (page, object och fragment -cache)</li>
-                    <li>Databaser (MySQL, Redis, PostgreSQL)</li>
-                    <li>Javascript (Vanilla JS, jQuery)</li>
-                    <li>Templating (Laravel Blade, Handlebars)</li>
-                    <li>Laravel (enklare implementationer)</li>
-                    <li>PHP 8 (inkl. OOP)</li>
-                    <li>JSON Restful API</li>
-                </ul>
+            <section id="kompetens">
+                <article>
+                    <h2>Kompetens</h2>
+                    <p>Före och under min yrkesverksamma tid har jag samlat på mig en hel del kunskaper, både tekniska färdigheter, kunskap inom ledning av mindre team med mycket rörelse (konsultbaserade team) och arkitekturella lösningar. </p>
 
-                <h3>Ledarskap</h3>
-                <p>Under min tid på Helsingborg Stad har jag haft en roll som inneburit ett visst ledarskap, för anställda och konsulter. Metoden har varit mycket tillitsbaserad, och bygger på att ge kollegor en god informativ grund att jobba från.</p>
+                    <h3>Teknik</h3>
+                    <p>Min meritlista kan göras lång och komplicerad, men nedan följer ett axplock av kunskaper jag har. WordPress har länge varit mitt huvudsakliga arbetsområde, där jag numera kan säga att jag har <strong>arbetat aktivt med CMS:et i över 10 år</strong>.</p>
 
-                <h3>Arkitektur</h3>
-                <p>Jag har de 5 senaste åren paralellt med utvecklingsuppdraget haft stort forkus på arkitektur av applikationer. Jag arbetar alltid med vedertagna standarder som grund för mina designer, för att underlätta onboarding och dialog i teamen.</p>
+                    <ul>
+                        <li>WordPress (Utveckling av plugin och teman)</li>
+                        <li>Cache (page, object och fragment -cache)</li>
+                        <li>Databaser (MySQL, Redis, PostgreSQL)</li>
+                        <li>Javascript (Vanilla JS, jQuery)</li>
+                        <li>Templating (Laravel Blade, Handlebars)</li>
+                        <li>Laravel (enklare implementationer)</li>
+                        <li>PHP 8 (inkl. OOP)</li>
+                        <li>JSON Restful API</li>
+                    </ul>
 
-                <h3>Utbildning</h3>
-                <p>Under mina gymnasiala år, gjorde jag valet att rikta in mig på det tekniska programmet. Då med tillval starkt inriktat på programmering i bland annat VB.NET, .NET C#, HTML, CSS och Java. Detta i kombination med tillvalskurser i musik och medieproduktion.</p>
-                <p>Kort efter att jag tog studenten, valde jag att söka mig vidare i studierna. Eftersom jag gärna breddar min kunskapsbas, läste jag Informatik vid Högskolan i Halmstad. Under mina högskoleår läste jag blandade kurser inom informatik, som bland annat omfattar; Multimedia, IT-Strategi, Interaktionsdesign, Visual-Basic, Affärssystem, Nätverksteknik, ASP.NET, Systemutveckling. Övergripande kopplar kurserna till informationsflöden och struktur av större organisationer.</p>
+                    <h3>Ledarskap</h3>
+                    <p>Under min tid på Helsingborg Stad har jag haft en roll som inneburit ett visst ledarskap, för anställda och konsulter. Metoden har varit mycket tillitsbaserad, och bygger på att ge kollegor en god informativ grund att jobba från.</p>
 
-                <h3>Övrigt</h3>
-                <p>Programmering har sedan 14 års åldern varit ett intresse för mig. Redan då insåg jag att det var webbutveckling som var mest intressant. Till stor del för att det är en teknik som medger en kort process från idé till lanseing.</p>
-            </article>
-        </section>
+                    <h3>Arkitektur</h3>
+                    <p>Jag har de 5 senaste åren paralellt med utvecklingsuppdraget haft stort forkus på arkitektur av applikationer. Jag arbetar alltid med vedertagna standarder som grund för mina designer, för att underlätta onboarding och dialog i teamen.</p>
 
-        <section id="kontakt">
-            <article>
-                <h2>Kontakta mig</h2>
-                <p>Kul att du vill ta kontakt med mig! Om det gäller rekrytering, får du gärna <a href="https://www.linkedin.com/in/sebastianthulin/">skicka ett meddelande på LinkedIn</a>. Gäller det något annat kan du alltid slå en signal på <a href="tel:+46723949388" class="u-nobreak">072 394 93 88</a> eller maila mig på <a href="sebastian.thulin@gmail.com" class="u-nobreak">sebastian.thulin@gmail.com</a>.</p>
-            </article>
-        </section>
+                    <h3>Utbildning</h3>
+                    <p>Under mina gymnasiala år, gjorde jag valet att rikta in mig på det tekniska programmet. Då med tillval starkt inriktat på programmering i bland annat VB.NET, .NET C#, HTML, CSS och Java. Detta i kombination med tillvalskurser i musik och medieproduktion.</p>
+                    <p>Kort efter att jag tog studenten, valde jag att söka mig vidare i studierna. Eftersom jag gärna breddar min kunskapsbas, läste jag Informatik vid Högskolan i Halmstad. Under mina högskoleår läste jag blandade kurser inom informatik, som bland annat omfattar; Multimedia, IT-Strategi, Interaktionsdesign, Visual-Basic, Affärssystem, Nätverksteknik, ASP.NET, Systemutveckling. Övergripande kopplar kurserna till informationsflöden och struktur av större organisationer.</p>
 
-        <section id="omwebbplatsen">
-            <article>
-                <h2>Om webbplatsen</h2>
-                <p>Den här sidan är byggd med enkla tekniker utifrån perspektivet "less is more". Alla teknikval är avvägda och behovsanpassade. Sidans storlek är under 50kb; vilket oftast motsvarar 1/4 av en enda mindre bild på en normal webbplats. För att ställa siffran i perspektiv visade flera undersökningar, gjorda 2018 att medelvärdet för en modern webbplats ligger på 3MB.</p>
+                    <h3>Övrigt</h3>
+                    <p>Programmering har sedan 14 års åldern varit ett intresse för mig. Redan då insåg jag att det var webbutveckling som var mest intressant. Till stor del för att det är en teknik som medger en kort process från idé till lanseing.</p>
+                </article>
+            </section>
 
-                <h3>Prestanda</h3>
-                <p>Prestanda är den mest värdefulla konverteraren som finns, det är bevisat att det leder till fler försäljningar och nöjda besökare. Enligt min uppfattning är det en spelare som går att jämnställa med bra design och usability.</p>
+            <section id="kontakt">
+                <article>
+                    <h2>Kontakta mig</h2>
+                    <p>Kul att du vill ta kontakt med mig! Om det gäller rekrytering får du gärna <a href="https://www.linkedin.com/in/sebastianthulin/">skicka ett meddelande på LinkedIn</a>. Gäller det något annat kan du alltid slå en signal på <a href="tel:+46723949388" class="u-nobreak">072 394 93 88</a> eller maila mig på <a href="sebastian.thulin@gmail.com" class="u-nobreak">sebastian.thulin@gmail.com</a>.</p>
+                </article>
+            </section>
 
-                <h3>Opensource</h3>
-                <p>Jag gillar och tror på opensource, därför är hela webbplatsen <a href="https://opensource.org/licenses/MIT">licensierad under MIT licensen</a>. Om du inte vet vad licensen inbegriper för rättigheter och skyldigheter kan du <a href="https://opensource.org/licenses/MIT">läsa mer om det här</a>. All kod finns tillgänglig på <a href="https://github.com/sebastianthulin">min githubsida, som du kan besöka här</a>.</p>
+            <section id="omwebbplatsen" class="u-hidden--print">
+                <article>
+                    <h2>Om webbplatsen</h2>
+                    <p>Den här sidan är byggd med enkla tekniker utifrån perspektivet "less is more". Alla teknikval är avvägda och behovsanpassade. Sidans storlek är under 50kb; vilket oftast motsvarar 1/4 av en enda mindre bild på en normal webbplats. För att ställa siffran i perspektiv visade flera undersökningar, gjorda 2018 att medelvärdet för en modern webbplats ligger på 3MB.</p>
 
-                <h3>Kakor och GDPR</h3>
-                <p>Webbplatsen använder Google Analythics för att spåra besökare och därmed också kakor. Informationen sparas anonymiserat vilket gör att informationen inte kan spåras tillbaka till dig som unik användare. Inga andra funktioner på denna webbplats sparar cookies.</p>
-            </article>
-        </section>
+                    <h3>Prestanda</h3>
+                    <p>Prestanda är den mest värdefulla konverteraren som finns, det är bevisat att det leder till fler försäljningar och nöjda besökare. Enligt min uppfattning är det en spelare som går att jämnställa med bra design och usability.</p>
 
-        <div class="fab">
+                    <h3>Opensource</h3>
+                    <p>Jag gillar och tror på opensource, därför är hela webbplatsen <a href="https://opensource.org/licenses/MIT">licensierad under MIT licensen</a>. Om du inte vet vad licensen inbegriper för rättigheter och skyldigheter kan du <a href="https://opensource.org/licenses/MIT">läsa mer om det här</a>. All kod finns tillgänglig på <a href="https://github.com/sebastianthulin">min githubsida, som du kan besöka här</a>.</p>
+
+                    <h3>Kakor och GDPR</h3>
+                    <p>Webbplatsen använder Google Analythics för att spåra besökare och därmed också kakor. Informationen som skickas till google lagras anonymiserad. Inga andra funktioner på denna webbplats sparar cookies.</p>
+                </article>
+            </section>
+        </main>
+
+        <div class="fab u-hidden--print">
             <a id="submenu-trigger" href="#submenu" aria-label="Mer information">
                 <i class="icon icon-close"></i>
             </a>
@@ -192,6 +215,7 @@
                 <li><a aria-label="Besök github" href="http://github.com/sebastianthulin">Min github</a></li>
             </ul>
         </div>
+
     </body>
 
     <script>
@@ -208,70 +232,30 @@
         //Simulate new page load, jump to top.
         ['hashchange', 'onload'].forEach(function(e){
             window.addEventListener(e, function(e) {
-                window.scrollTo(0, 0);
-                setTimeout(function(){
-                    window.scrollTo(0, 0);
-                }, 20);
+                document.querySelector('main').scrollTo(0, 0);
             }, false);
         });
 
+        //Anchor links (used in func below)
+        var anchorLinks = document.querySelectorAll("[href^='#']"); 
+
+        //Update page title
+        var baseTitle   = document.title;
+        [].forEach.call(anchorLinks, function(page) {
+            page.addEventListener('click', function() {
+                if(this.getAttribute('aria-label') !== null) {
+                    document.title = baseTitle + ' - ' + this.getAttribute('aria-label');
+                }
+            });
+        });
+
         //Active menu element
-        var pages = document.querySelectorAll("nav a");
-        [].forEach.call(pages, function(page) {
+        [].forEach.call(anchorLinks, function(page) {
             page.addEventListener('click', function() {
                 [].forEach.call(document.querySelectorAll("nav a"),function(page){
                     page.classList.remove('current');
                 });
                 this.classList.add('current');
-            });
-        });
-
-        //Update title
-        var pages       = document.querySelectorAll("nav a");
-        var baseTitle   = document.title;
-        [].forEach.call(pages, function(page) {
-            page.addEventListener('click', function() {
-                document.title = baseTitle + ' - ' + this.getAttribute('aria-label');
-            });
-        });
-
-        //Content animation defer
-        var pages = document.querySelectorAll("nav a, .fab ul a, .button");
-        [].forEach.call(pages, function(page) {
-            page.addEventListener('click', function(e) {
-
-                e.preventDefault();
-
-                let hash = this.closest('a').getAttribute('href');
-
-                //Not a new page
-                if(hash === window.location.hash) {
-                    return false;
-                }
-
-                //Bail if undefined
-                if(typeof hash === 'undefined') {
-                   return false;
-                }
-
-                //Remove all animations out
-                let sections = document.querySelectorAll("section");
-                [].forEach.call(sections, function(item) {
-                    item.classList.remove('animate-out');
-                });
-
-                //Do animation
-                let animateOut = document.querySelectorAll("section:target"); 
-                if(animateOut.length > 0) {
-                    [].forEach.call(animateOut, function(item) {
-                        item.classList.add('animate-out');
-                    });
-                    setTimeout(function(hash) {
-                        window.location.hash = hash;
-                    }, 500, hash);
-                } else {
-                    window.location.hash = hash;
-                }
             });
         });
 

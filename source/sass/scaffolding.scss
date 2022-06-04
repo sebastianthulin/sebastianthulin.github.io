@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-size: 18px;
     font-family: Raleway,sans-serif;
@@ -5,22 +9,34 @@ body {
     margin: 0;
     color: var(--body-font-face-color, #fff);
     background: var(--body-background-color, #000);
-    padding-top: calc(#{$base} * 12);
 
-    @media all and (max-width: 800px) {
-        padding-top: calc(#{$base} * 4);
-    }
-}
-
-.background {
-    position: fixed;
-    width: 100vw;
     height: 100vh;
     background-image: url('../assets/blob-scene-haikei.svg');
     background-size: cover;
     background-position: bottom left;
     background-attachment: fixed;
-    top: 0;
+
+    @media all and (max-width: 800px) {
+        padding-top: calc(#{$base} * 4);
+    }
+
+    @media screen {
+        text-shadow: 0px 0px 8px black; 
+    }
+}
+
+@media screen {
+    main {
+        padding-top: calc(#{$base} * 12);
+        overflow: auto;
+        height: 100vh;
+        section {
+            display: none;
+            &:target {
+                display: block;
+            }
+        }
+    }
 }
 
 h1, h2, h3 {
@@ -29,7 +45,6 @@ h1, h2, h3 {
     margin: 1.2rem 0;
     line-height: 120%;
     color: inherit;
-    text-shadow: 0px 0px 8px black;
 }
 
 h1, h2 {

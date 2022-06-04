@@ -23,13 +23,19 @@
 }
 
 @media all and (max-width: 800px) {
-    .hidden-mobile {
+    .u-hidden--mobile {
         display: none;
     }
 }
 
 @media all and (min-width: 801px) {
-    .hidden-desktop {
+    .u-hidden--desktop {
         display: none;
+    }
+}
+
+@media print {
+    .u-hidden--print {
+        display: none !important;
     }
 }
