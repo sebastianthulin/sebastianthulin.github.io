@@ -10,7 +10,6 @@
     right: calc(#{$base} * 3);
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
     animation: pop-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-    z-index: 40;
     @media all and (max-width: 800px) {
         bottom: 6rem;
     }

@@ -10,20 +10,17 @@ body {
     @media all and (max-width: 800px) {
         padding-top: calc(#{$base} * 4);
     }
+}
 
-    &:after {
-        position: fixed;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        content: '';
-        background-image: url('../assets/blob-scene-haikei.svg');
-        background-size: cover;
-        background-position: bottom left;
-        background-attachment: fixed;
-        z-index: 0;
-    }
+.background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../assets/blob-scene-haikei.svg');
+    background-size: cover;
+    background-position: bottom left;
+    background-attachment: fixed;
+    top: 0;
 }
 
 h1, h2, h3 {
