@@ -28,8 +28,9 @@ body {
 @media screen {
     main {
         padding-top: calc(#{$base} * 12);
-        overflow: auto;
+        overflow-y: auto;
         height: 100vh;
+
         section {
             display: none;
             &:target {

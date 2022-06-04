@@ -242,8 +242,8 @@
         //Update page title
         var baseTitle   = document.title;
         [].forEach.call(anchorLinks, function(page) {
-            page.addEventListener('click', function() {
-                if(this.getAttribute('aria-label') !== null) {
+            page.addEventListener('click', function(event) {
+                if(this.getAttribute('aria-label') !== null && !event.defaultPrevented) {
                     document.title = baseTitle + ' - ' + this.getAttribute('aria-label');
                 }
             });
@@ -251,7 +251,12 @@
 
         //Active menu element
         [].forEach.call(anchorLinks, function(page) {
-            page.addEventListener('click', function() {
+            page.addEventListener('click', function(event) {
+
+                if(!event.defaultPrevented) {
+                    return;
+                }
+
                 [].forEach.call(document.querySelectorAll("nav a"),function(page){
                     page.classList.remove('current');
                 });
