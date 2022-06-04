@@ -28,10 +28,10 @@
         <header>
             <nav role="navigation" aria-label="Huvudmeny">
                 <ul>
-                    <li><a href="#hem"><i class="icon icon-me hidden-desktop"></i><span>Hem</span></a></li>
-                    <li><a href="#erfarenhet"><i class="icon icon-history hidden-desktop"></i><span>Erfarenhet</span></a></li>
-                    <li><a href="#kompetens"><i class="icon icon-code hidden-desktop"></i><span>Kompetens</span></a></li>
-                    <li><a href="#kontakt"><i class="icon icon-contact hidden-desktop"></i><span>Kontakt</span></a></li>
+                    <li><a href="#hem" aria-label="Hem"><i class="icon icon-me hidden-desktop"></i><span>Hem</span></a></li>
+                    <li><a href="#erfarenhet" aria-label="Erfarenhet"><i class="icon icon-history hidden-desktop"></i><span>Erfarenhet</span></a></li>
+                    <li><a href="#kompetens" aria-label="Kompetens"><i class="icon icon-code hidden-desktop"></i><span>Kompetens</span></a></li>
+                    <li><a href="#kontakt" aria-label="Kontakt"><i class="icon icon-contact hidden-desktop"></i><span>Kontakt</span></a></li>
                 </ul>
             </nav>
         </header>
@@ -188,8 +188,8 @@
                 <i class="icon icon-close"></i>
             </a>
             <ul>
-                <li><a href="#omwebbplatsen">Om webbplatsen</a></li>
-                <li><a href="http://github.com/sebastianthulin">Min github</a></li>
+                <li><a aria-label="Om Webbplatsen" href="#omwebbplatsen">Om webbplatsen</a></li>
+                <li><a aria-label="Besök github" href="http://github.com/sebastianthulin">Min github</a></li>
             </ul>
         </div>
     </body>
@@ -223,6 +223,15 @@
                     page.classList.remove('current');
                 });
                 this.classList.add('current');
+            });
+        });
+
+        //Update title
+        var pages       = document.querySelectorAll("nav a");
+        var baseTitle   = document.title;
+        [].forEach.call(pages, function(page) {
+            page.addEventListener('click', function() {
+                document.title = baseTitle + ' - ' + this.getAttribute('aria-label');
             });
         });
 
