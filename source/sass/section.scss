@@ -1,12 +1,11 @@
 section {
-    width: 94vw;
     max-width: 750px;
     margin: 0 auto;
-    padding: calc(#{$base} * 12) 0;
+    padding: calc(#{$base} * 12);
     position: relative;
 
     @media all and (max-width: 800px) {
-        padding: calc(#{$base} * 2) 0 calc(#{$base} * 20) 0;
+        padding: calc(#{$base} * 2) #{$base} calc(#{$base} * 20) #{$base};
     }
 }
 
