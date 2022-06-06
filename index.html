@@ -29,25 +29,25 @@
                 <ul>
                     <li>
                         <a href="#hem" aria-label="Hem">
-                            <i class="icon icon-me u-hidden--desktop"></i>
+                            <i role="img" class="icon icon-me u-hidden--desktop"></i>
                             <span>Hem</span>
                         </a>
                     </li>
                     <li>
                         <a href="#erfarenhet" aria-label="Erfarenhet">
-                            <i class="icon icon-history u-hidden--desktop"></i>
+                            <i role="img" class="icon icon-history u-hidden--desktop"></i>
                             <span>Erfarenhet</span>
                         </a>
                     </li>
                     <li>
                         <a href="#kompetens" aria-label="Kompetens">
-                            <i class="icon icon-code u-hidden--desktop"></i>
+                            <i role="img" class="icon icon-code u-hidden--desktop"></i>
                             <span>Kompetens</span>
                         </a>
                     </li>
                     <li>
                         <a href="#kontakt" aria-label="Kontakt">
-                            <i class="icon icon-contact u-hidden--desktop"></i>
+                            <i role="img" class="icon icon-contact u-hidden--desktop"></i>
                             <span>Kontakt</span>
                         </a>
                     </li>
@@ -58,8 +58,8 @@
         <main>
 
             <section id="hem">
-                <article>
-                    <h1>
+                <article role="article">
+                    <h1 role="heading" aria-level="1">
                         Hej 👋, <br/>
                         jag heter Sebastian <br/>
                         och jobbar med webb.
@@ -74,7 +74,7 @@
             </section>
 
             <section id="erfarenhet">
-                <article>
+                <article role="article">
                     <h2>Produkter</h2>
 
                     <div class="card">
@@ -119,7 +119,7 @@
 
                 </article>
 
-                <article>
+                <article role="article">
                     <h2>Arbetsliv</h2>
 
                     <div class="card">
@@ -149,7 +149,7 @@
             </section>
 
             <section id="kompetens">
-                <article>
+                <article role="article">
                     <h2>Kompetens</h2>
                     <p>Före och under min yrkesverksamma tid har jag samlat på mig en hel del kunskaper, både tekniska färdigheter, kunskap inom ledning av mindre team med mycket rörelse (konsultbaserade team) och arkitekturella lösningar. </p>
 
@@ -183,14 +183,14 @@
             </section>
 
             <section id="kontakt">
-                <article>
+                <article role="article">
                     <h2>Kontakta mig</h2>
                     <p>Kul att du vill ta kontakt med mig! Om det gäller rekrytering får du gärna <a href="https://www.linkedin.com/in/sebastianthulin/">skicka ett meddelande på LinkedIn</a>. Gäller det något annat kan du alltid slå en signal på <a href="tel:+46723949388" class="u-nobreak">072 394 93 88</a> eller maila mig på <a href="sebastian.thulin@gmail.com" class="u-nobreak">sebastian.thulin@gmail.com</a>.</p>
                 </article>
             </section>
 
             <section id="omwebbplatsen" class="u-hidden--print">
-                <article>
+                <article role="article">
                     <h2>Om webbplatsen</h2>
                     <p>Den här sidan är byggd med enkla tekniker utifrån perspektivet "less is more". Alla teknikval är avvägda och behovsanpassade. Sidans storlek är under 50kb; vilket oftast motsvarar 1/4 av en enda mindre bild på en normal webbplats. För att ställa siffran i perspektiv visade flera undersökningar, gjorda 2018 att medelvärdet för en modern webbplats ligger på 3MB.</p>
 
@@ -208,9 +208,9 @@
 
         <div class="fab u-hidden--print">
             <a id="submenu-trigger" href="#submenu" aria-label="Mer information">
-                <i class="icon icon-close"></i>
+                <i role="img" class="icon icon-close"></i>
             </a>
-            <ul>
+            <ul id="submenu">
                 <li><a aria-label="Om Webbplatsen" href="#omwebbplatsen">Om webbplatsen</a></li>
                 <li><a aria-label="Besök github" href="http://github.com/sebastianthulin">Min github</a></li>
             </ul>
