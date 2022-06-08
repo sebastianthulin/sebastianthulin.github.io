@@ -5,7 +5,7 @@ section {
     position: relative;
 
     @media all and (max-width: 800px) {
-        padding: calc(#{$base} * 2) #{$base} calc(#{$base} * 20) #{$base};
+        padding: calc(#{$base} * 3) calc(#{$base} * 3) calc(#{$base} * 20) calc(#{$base} * 3);
     }
 }
 
