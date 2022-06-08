@@ -1,9 +1,21 @@
 @media print {
   body, html {
-    background: initial; 
+    background: initial;
+    -webkit-print-color-adjust: exact;
+    -moz-print-color-adjust: exact;
+    -ms-print-color-adjust: exact;
+    print-color-adjust: exact;
 
     * {
       color: #000;
     }
+  }
+
+  a.u-printable-url::after{
+    content: " (" attr(href) ") ";
+  }
+
+  .u-pagebreak--before {
+    break-before: page;
   }
 }

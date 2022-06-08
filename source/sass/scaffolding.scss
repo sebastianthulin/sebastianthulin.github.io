@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    print-color-adjust: exact;
 }
 
 html {
@@ -49,6 +50,7 @@ h1, h2, h3 {
     line-height: 120%;
     color: inherit;
     text-transform: capitalize;
+    break-after: avoid;
 
     .small {
         font-size: .6em;
@@ -62,7 +64,7 @@ h1, h2 {
 h3 {
     font-size: 1.4rem;
     margin-bottom: .5rem;
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 
 p {
@@ -70,7 +72,7 @@ p {
 }
 
 a {
-    color: var(--body-font-face-color, #fff);
+    color: var(--body-font-face-color, #000);
     text-decoration: underline;
     font-weight: 400;
 }
