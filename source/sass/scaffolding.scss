@@ -48,6 +48,11 @@ h1, h2, h3 {
     margin: 1.2rem 0;
     line-height: 120%;
     color: inherit;
+    text-transform: capitalize;
+
+    .small {
+        font-size: .6em;
+    }
 }
 
 h1, h2 {
