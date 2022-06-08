@@ -7,6 +7,10 @@ section {
     @media all and (max-width: 800px) {
         padding: calc(#{$base} * 3) calc(#{$base} * 3) calc(#{$base} * 20) calc(#{$base} * 3);
     }
+
+    @media print {
+        padding: calc(#{$base} * 2) 0;
+    }
 }
 
 section:target {
