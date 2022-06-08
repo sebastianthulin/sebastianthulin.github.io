@@ -10,7 +10,7 @@
         <meta name="format-detection" content = "telephone=yes">
         <meta name="HandheldFriendly" content="true" />
 
-        <link rel="shortcut icon" href="data:image/vnd.microsoft.icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAABILAAASCwAAAAAAAAAAAAD///////////7+/v//////+Pn8/97k8f/L1ev/vMjl/8PK3v/i5e7/ure5/9rX1f///////v79///////////////////////+/v7/6u3z/87V6v/Dz+r/wczp/6m64v+cq8//3OLy/3lyeP8zJyD/293d///////9/f3////////////9/v3/3+Lp/9ja5//P1ez/ytLw/66+5f+Tqdv/mq3X/8nU6f/FydD/vcG9/8O8sP/Px77///////7+/v//////3NjQ/8jIxP/u8fb/2Nzw/73G6f+wwOT/ydDr/7i75P+8weH/09fc/8W5p/+4qpf/rJ6M/9rUzP//////8/Hu/7mwof+3rZ3/ysS2/9PX5f+4xOr/ydLr/7a04P+pp+L/rqjY/7i60v+2raP/saWT/6yhkP+uopP/8/Hw/9XOxP+yqJj/vLOl/7ismv/Bwcn/wszz/77G5f+cnc//trro/6en1f+tstn/s7fH/6yfjv+qn4//n5KB/8/IwP+/tqb/s6iW/7muoP+0qJf/wsHH/8fQ8/+5wuz/vL7p/7Oz4/++vOH/v7/k/8bH4v+upJL/opWD/5yPfP+yp5j/sKWV/7CmlP+0p5L/urGs/9DT6//R1e3/zsnr/8K/5//Jw+P/z8Pg/7Ww0f/Pz+D/qqOS/5KHdv+Winf/nZKA/6OYh/+lmon/qZyE/7Gswf/Fy/X/0tPp/7e94f+doMj/p6za/8PF5f+FirP/qK7N/5+ckP+De2v/hnxr/42Ec/+jm4v/lot5/5uQev+knZ//marV/8fN5P/DxuX/rLHX/6624P/MzOn/v7/f/87S6P+UnJv/ZmNT/2FgUf9+fnH/sKui/3RrXP9/dmX/hH5y/2+Gpf+qt9b/3Nrq/9HQ5//Sz+j/0Mvk/8/K4f/Z2+7/pbrF/zZEO/8wOjD/mp2V/+Lh3v+Ce2r/hXtm/5aWkP98mLj/iZe4/8vO6P/Pzuj/z8zp/9TQ5f/Uz97/7ev1/9bh4v9JV0//TlNK/+bm5P//////29LD/7uoiv/JuKL/rL3O/2+Otf91kcL/gJPB/4WVwv+Xpc3/tcbl/+77///FycT/d3Ff/8C9tv///////v7///7+/v/Vyrj/v6mM/8fCt/+zzun/gqbO/1RznP9ZeKH/iq/Y/83o///f5+n/fnVr/7WvpP///////v7+/////////////v39/93Wyf/CsZr/z8zF/9Hi7/+91en/yt7s/+jy9P/o49v/wLit/8fDvv/+/v7//v7+//////////////////7+/v//////8/Hu/9jOv//QxbT/08i2/9bKuf/Uy7//19PN//Tz8f///////v79////////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==" />
+        <link rel="shortcut icon" href="./dist/sebastian.png" />
         <link rel="stylesheet" type="text/css" href="./dist/css/app.css">
         <link href="https://fonts.googleapis.com/css?family=Raleway:400,300" rel="stylesheet" type="text/css">
     
@@ -28,25 +28,25 @@
             <nav role="navigation" aria-label="Huvudmeny">
                 <ul>
                     <li>
-                        <a href="#hem" aria-label="Hem">
+                        <a href="#home" aria-label="Home">
                             <i role="img" class="icon icon-me u-hidden--desktop"></i>
-                            <span>Hem</span>
+                            <span>Home</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#kompetens" aria-label="Kompetens">
+                        <a href="#competence" aria-label="Competence">
                             <i role="img" class="icon icon-code u-hidden--desktop"></i>
-                            <span>Kompetens</span>
+                            <span>Competence</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#erfarenhet" aria-label="Erfarenhet">
+                        <a href="#experience" aria-label="Experience">
                             <i role="img" class="icon icon-history u-hidden--desktop"></i>
-                            <span>Erfarenhet</span>
+                            <span>Experience</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#kontakt" aria-label="Kontakt">
+                        <a href="#contact" aria-label="Kontakt">
                             <i role="img" class="icon icon-contact u-hidden--desktop"></i>
                             <span>Kontakt</span>
                         </a>
@@ -57,60 +57,59 @@
 
         <main>
 
-            <section id="hem">
+            <section id="home">
                 <article role="article">
-                    <div class="article__heading">
-                        <img src="./dist/sebastian.png" class="avatar u-hidden--mobile" aria-label="Porträttbild på Sebastian Thulin" />
-                        <h1 role="heading" aria-level="1">
-                            Hej 👋, <br/>
-                            jag heter Sebastian <br/>
-                            och jobbar med webb.
+                    <div class="hero">
+                        <img src="./dist/sebastian.png" class="hero__image" aria-label="Porträttbild på Sebastian Thulin" />
+                        <h1 role="heading" aria-level="1" class="hero__heading">
+                            Sebastian Thulin<br/>
+                            <span class="small">Developer, Arcitect & Team Lead</span>
                         </h1>
                     </div>
 
-                    <p>Jag brinner för att utveckla effektiva och användbara lösningar för målgruppen, med hög kvalitét. Slutanvändare, organisation eller utvecklare? Bra lösningar är trivsamma för alla.</p>
-                    <p>Under mina år i Helsingborg Stad har jag drivit och utvecklat OpenSource lösningen <a href="https://municipio.se">Municipio</a> med WordPress som bas, som numera används av runt 30 kommuner och organisationer.</p>
+                    <p>I am passionate about developing effective and useful solutions for the target group, with high quality. End user, organization or developer? Good solutions are pleasant for everyone.</p>
+                    <p>During my years in the City of Helsingborg, I have run and developed the OpenSource solution Municipio with WordPress as a base, which is now used by around 30 municipalities and organizations.</p>
 
-                    <a href="#kontakt" class="button u-hidden--print">Kontakta mig</a>
+                    <a href="#contact" class="button u-hidden--print">Contact me</a>
 
                 </article>
             </section>
 
-            <section id="kompetens">
+            <section id="competence">
                 <article role="article">
-                    <h2>Kompetens</h2>
-                    <p>Före och under min yrkesverksamma tid har jag samlat på mig en hel del kunskaper, både tekniska färdigheter, kunskap inom ledning av mindre team med mycket rörelse (konsultbaserade team) och arkitekturella lösningar. </p>
+                    <h2>Competence</h2>
+                    <p>Before and during my professional time, I have accumulated a lot of knowledge, both technical skills, knowledge in the management of small teams with a lot of movement (consulting-based teams) and architectural solutions.</p>
 
-                    <h3>Teknik</h3>
-                    <p>Min meritlista kan göras lång och komplicerad, men nedan följer ett axplock av kunskaper jag har. WordPress har länge varit mitt huvudsakliga arbetsområde, där jag numera kan säga att jag har <strong>arbetat aktivt med CMS:et i över 10 år</strong>.</p>
+                    <h3>Technology</h3>
+                    <p>My track record can be made long and complicated, but below is a selection of knowledge I have. WordPress has long been my main area of ​​work, where I can now say that <strong>I have worked actively with the CMS for over 10 years.</strong></p>
 
                     <ul>
-                        <li>WordPress (Utveckling av plugin och teman)</li>
-                        <li>Cache (page, object och fragment -cache)</li>
-                        <li>Databaser (MySQL, Redis, PostgreSQL)</li>
-                        <li>Javascript (Vanilla JS, jQuery)</li>
+                        <li>WordPress (Plugin and theme development)</li>
+                        <li>Cache (page, object and fragment -cache)</li>
+                        <li>Databases (MySQL, Redis, PostgreSQL)</li>
+                        <li>JavaScript (Vanilla JS, jQuery)</li>
                         <li>Templating (Laravel Blade, Handlebars)</li>
                         <li>Laravel (enklare implementationer)</li>
-                        <li>PHP 8 (inkl. OOP)</li>
+                        <li>PHP 8 (incl. OOP)</li>
                         <li>JSON Restful API</li>
                     </ul>
 
-                    <h3>Ledarskap</h3>
-                    <p>Under min tid på Helsingborg Stad har jag haft en roll som inneburit ett visst ledarskap, för anställda och konsulter. Metoden har varit mycket tillitsbaserad, och bygger på att ge kollegor en god informativ grund att jobba från.</p>
+                    <h3>Leadership</h3>
+                    <p>During my time at the City of Helsingborg, I have had a role that has involve a certain leadership, for employees and consultants. The method has been very trust-based, and is based on giving colleagues a good informative basis to work from. I often tend to find myself in a leader position of the group eventually.</p>
 
-                    <h3>Arkitektur</h3>
-                    <p>Jag har de 5 senaste åren paralellt med utvecklingsuppdraget haft stort forkus på arkitektur av applikationer. Jag arbetar alltid med vedertagna standarder som grund för mina designer, för att underlätta onboarding och dialog i teamen.</p>
+                    <h3>Architecture</h3>
+                    <p>For the past 5 years, in parallel with the development assignment, I have had a strong focus on the architecture of applications. I always work with accepted standards as a basis for my designers, to facilitate onboarding and dialogue in the teams.</p>
 
-                    <h3>Utbildning</h3>
-                    <p>Under mina gymnasiala år, gjorde jag valet att rikta in mig på det tekniska programmet. Då med tillval starkt inriktat på programmering i bland annat VB.NET, .NET C#, HTML, CSS och Java. Detta i kombination med tillvalskurser i musik och medieproduktion.</p>
-                    <p>Kort efter att jag tog studenten, valde jag att söka mig vidare i studierna. Eftersom jag gärna breddar min kunskapsbas, läste jag Informatik vid Högskolan i Halmstad. Under mina högskoleår läste jag blandade kurser inom informatik, som bland annat omfattar; Multimedia, IT-Strategi, Interaktionsdesign, Visual-Basic, Affärssystem, Nätverksteknik, ASP.NET, Systemutveckling. Övergripande kopplar kurserna till informationsflöden och struktur av större organisationer.</p>
+                    <h3>Education</h3>
+                    <p>During my high school years, I made the choice to focus on the technical program. Then with options strongly focused on programming in, among other things, VB.NET, .NET C #, HTML, CSS and Java. This in combination with optional courses in music and media production.</p>
+                    <p>Shortly after I graduated, I chose to apply for further studies. Since I like to broaden my knowledge base, I studied Informatics at Halmstad University. During my college years, I studied mixed courses in computer science, which include; Multimedia, IT Strategy, Interaction Design, Visual-Basic, Business Systems, Network Technology, ASP.NET, Systems Development. Overall, the courses link to information flows and structure of larger organizations.</p>
 
-                    <h3>Övrigt</h3>
-                    <p>Programmering har sedan 14 års åldern varit ett intresse för mig. Redan då insåg jag att det var webbutveckling som var mest intressant. Till stor del för att det är en teknik som medger en kort process från idé till lanseing.</p>
+                    <h3>Other</h3>
+                    <p>Programming has been an interest of mine since the age of 14. Even then, I realized that it was web development that was most interesting. Largely because it is a technology that allows a short process from idea to launch.</p>
                 </article>
             </section>
 
-            <section id="erfarenhet">
+            <section id="experience">
                 <article role="article">
                     <h2>Produkter</h2>
 
@@ -185,37 +184,39 @@
                 </article>
             </section>
 
-            <section id="kontakt">
+            <section id="contact">
                 <article role="article">
-                    <h2>Kontakta mig</h2>
-                    <p>Kul att du vill ta kontakt med mig! Om det gäller rekrytering får du gärna <a href="https://www.linkedin.com/in/sebastianthulin/">skicka ett meddelande på LinkedIn</a>. Gäller det något annat kan du alltid slå en signal på <a href="tel:+46723949388" class="u-nobreak">072 394 93 88</a> eller maila mig på <a href="sebastian.thulin@gmail.com" class="u-nobreak">sebastian.thulin@gmail.com</a>.</p>
+                    <h2>Contact me</h2>
+                    <p>Get in touch with me! For recruitment, feel free to <a href="https://www.linkedin.com/in/sebastianthulin/">send me a message on LinkedIn</a>. If your inquiry is about something else or an ongoing reqruitement, you can always give me a call on <a href="tel:+46723949388" class="u-nobreak">072 394 93 88</a> or email at <a href="mailto:sebastian.thulin@gmail.com" class="u-nobreak">sebastian.thulin@gmail.com</a>.</p>
                 </article>
             </section>
 
-            <section id="omwebbplatsen" class="u-hidden--print">
+            <section id="aboutwebsite" class="u-hidden--print">
                 <article role="article">
-                    <h2>Om webbplatsen</h2>
-                    <p>Den här sidan är byggd med enkla tekniker utifrån perspektivet "less is more". Alla teknikval är avvägda och behovsanpassade. Sidans storlek är under 50kb; vilket oftast motsvarar 1/4 av en enda mindre bild på en normal webbplats. För att ställa siffran i perspektiv visade flera undersökningar, gjorda 2018 att medelvärdet för en modern webbplats ligger på 3MB.</p>
 
-                    <h3>Prestanda</h3>
-                    <p>Prestanda är den mest värdefulla konverteraren som finns, det är bevisat att det leder till fler försäljningar och nöjda besökare. Enligt min uppfattning är det en spelare som går att jämnställa med bra design och usability.</p>
+                    <h2>About the website</h2>
+                    <p>This page is built with simple techniques from the perspective of "less is more". All technology choices are balanced and tailored to needs. The page size is below 200kb; which usually corresponds to less than a single smaller image on a normal website. To put the figure in perspective, several surveys conducted in 2018 showed that the average value for a modern website is 3MB.</p>
+
+                    <h3>Performance</h3>
+                    <p>Performance is the most valuable converter available, it is proven that it leads to more sales and satisfied visitors. In my opinion, it is a player that can be equated with good design and usability.</p>
 
                     <h3>Opensource</h3>
-                    <p>Jag gillar och tror på opensource, därför är hela webbplatsen <a href="https://opensource.org/licenses/MIT">licensierad under MIT licensen</a>. Om du inte vet vad licensen inbegriper för rättigheter och skyldigheter kan du <a href="https://opensource.org/licenses/MIT">läsa mer om det här</a>. All kod finns tillgänglig på <a href="https://github.com/sebastianthulin">min githubsida, som du kan besöka här</a>.</p>
+                    <p>I like and believe in opensource, which is why the entire site is licensed under the MIT license. If you do not know what the license entails for rights and obligations, you can read more about this here. All code is available on my github page, which you can visit here.</p>
 
-                    <h3>Kakor och GDPR</h3>
-                    <p>Webbplatsen använder Google Analythics för att spåra besökare och därmed också kakor. Informationen som skickas till google lagras anonymiserad. Inga andra funktioner på denna webbplats sparar cookies.</p>
+                    <h3>Cookies and GDPR</h3>
+                    <p>This website use Google Analytics to track visitors and thus also cookies. The information sent to google is stored anonymously. No other functions on this website save cookies.</p>
+
                 </article>
             </section>
         </main>
 
         <div class="fab u-hidden--print">
-            <a id="submenu-trigger" href="#submenu" aria-label="Mer information">
+            <a id="submenu-trigger" href="#submenu" aria-label="More information">
                 <i role="img" class="icon icon-close"></i>
             </a>
             <ul id="submenu">
-                <li><a aria-label="Om Webbplatsen" href="#omwebbplatsen">Om webbplatsen</a></li>
-                <li><a aria-label="Besök github" href="http://github.com/sebastianthulin">Min github</a></li>
+                <li><a aria-label="About this website" href="#aboutwebsite">About this website</a></li>
+                <li><a aria-label="My github page" href="http://github.com/sebastianthulin">My github page</a></li>
             </ul>
         </div>
 
@@ -225,7 +226,7 @@
         //Init
         ['onload'].forEach(function(e){
             if(!window.location.hash) {
-                window.location.hash = "#hem";
+                window.location.hash = "#home";
             }
             [].forEach.call(document.querySelectorAll('[href="' + window.location.hash + '"]'),function(item){
                 item.classList.add('current');
