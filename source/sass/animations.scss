@@ -25,6 +25,10 @@
 
   @keyframes fade-in-bottom {
     0% {
+      opacity: 0;
+    }
+    1% {
+      opacity: 1;
       filter: blur(4px) opacity(0%) grayscale(100%);
       transform: translateY(50px);
     }
