@@ -20,6 +20,7 @@ header {
     a {
         position: relative;
         text-decoration: none;
+        cursor: pointer;
     }
 
     a:after {
@@ -33,6 +34,7 @@ header {
         display: block;
         background-color: var(--color-scheme-d);
         width: 0;
+        cursor: pointer;
     }
 
     a.current:after {
@@ -75,6 +77,7 @@ nav {
         ul a span {
             display: block;
             font-size: .7em;
+            cursor: pointer;
         }
     }
     
