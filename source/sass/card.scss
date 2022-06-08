@@ -1,10 +1,17 @@
 .card {
     position: relative;
-    background-color: var(--complementary-color);
     padding: calc(#{$base} * 4);
     border-left: calc(#{$base} * .5) solid #eee;
     border-radius: calc(#{$base} * .5);
-    filter: drop-shadow(0 calc(#{$base} * 3) calc(#{$base} * 2) rgba(0,0,0,.2));
+
+    @media print {
+        break-inside: avoid;
+    }
+
+    @media screen {
+        background-color: var(--complementary-color);
+        filter: drop-shadow(0 calc(#{$base} * 3) calc(#{$base} * 2) rgba(0,0,0,.2));  
+    }
 
     &:before {
         position: absolute;
