@@ -3,7 +3,9 @@
 }
 
 html {
-    overflow: hidden;
+    @media screen {
+        overflow: hidden;
+    }
 }
 
 body {
@@ -11,7 +13,6 @@ body {
     font-family: Raleway,sans-serif;
     font-weight: 300;
     margin: 0;
-    overflow: hidden;
     color: var(--body-font-face-color, #fff);
     background: var(--body-background-color, #000);
 
@@ -50,7 +51,7 @@ h1, h2, h3 {
 }
 
 h1, h2 {
-    font-size: 3.5rem;
+    font-size: 3rem;
 }
 
 h3 {

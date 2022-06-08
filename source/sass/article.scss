@@ -3,6 +3,13 @@ article {
     max-width: 75ch;
 }
 
+.article__heading {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: auto 1fr;
+    gap: calc(#{$base} * 4);
+}
+
 article p+p {
     margin-top: calc(#{$base} * 3);
 }
