@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head>
+<body>
+    <script>
+        (function () {
+            ns = "vitecm";
+            function supported() {
+                try {
+                    t = "___";
+                    window.localStorage.setItem(t, t);
+                    window.localStorage.removeItem(t);
+                    return true;
+                } catch {
+                    return false;
+                }
+            }
+            function get(e, d) {
+                e.source.postMessage({
+                    n: ns,
+                    m: "cb_get",
+                    v: window.localStorage[d.k]
+                }, e.origin);
+            }
+            function set(e, d) {
+                window.localStorage.setItem(d.k, d.v);
+            }
+            function init(e) {
+                s = true;
+                uuid = null;
+                try {
+                    uuid = window.localStorage["_va"];
+                }
+                catch (er) {
+                    s = false;
+                }
+                e.source.postMessage({
+                    n: ns,
+                    m: "cb_init",
+                    s: s && supported(),
+                    uuid: uuid
+                }, e.origin);
+            }
+            var dispatch = {
+                get: get,
+                set: set,
+                init: init,
+                dispose: function () { }
+            };
+            function setup() {
+                function broker(e) {
+                    d = e.data;
+                    if (d.n === ns) {
+                        dispatch[d.m](e, d);
+                    }
+                }
+                window.addEventListener("message", broker);
+                return function () {
+                    window.removeEventListener("message", broker);
+                }
+            }
+            dispatch.dispose = setup();
+        })();
+    </script>
+
+</body></html>
